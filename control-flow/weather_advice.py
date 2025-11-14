@@ -1,11 +1,14 @@
 # What's the weather like today? (sunny/rainy/cold):.
-user_input = input("What's the weather like today? (sunny/rainy/cold): ").lower()
+user_input = input("What's the weather like today? (sunny/rainy/cold): ")
+recommendation = ""
 
 if user_input == "sunny":
-    print(f"Wear a t-shirt and sunglasses.")
+    recommendation = "Wear a t-shirt and sunglasses."
 elif user_input == "rainy":
-    print(f"Don't forget your umbrella and a raincoat.")
+    recommendation = "Don't forget your umbrella and a raincoat."
 elif user_input == "cold":
-    print(f"Make sure to wear a warm coat and a scarf.")
+    recommendation = "Make sure to wear a warm coat and a scarf."
 else:
-    print(f"Sorry, I don't have recommendations for this weather.")
+    recommendation = "Sorry, I don't have recommendations for this weather."
+
+print(f"{recommendation}")
